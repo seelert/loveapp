@@ -1,86 +1,23 @@
+<!DOCTYPE html>
+<html>
 
-<body>
-<main>
-  <section id="heart">
-    <img src="http://pngimg.com/upload/heart_PNG687.png">
-  </section>
-  <section id="zitat">
-    <p>„Liebe ist nicht das was man erwartet zu bekommen, sondern das was man bereit ist zu geben.“</p>
-  </section>
-</main>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-</body>
-<style>
-@import url(https://fonts.googleapis.com/css?family=Princess+Sofia);
-* {
-  box-sizing: border-box;
-}
+  <head>
+    <title>loveapp</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-main,
-section {
-  display: block;
-}
+    <!-- Angularjs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  </head>
 
-body {
-  font-family: "Princess Sofia";
-  font-size: 1.5em;
-  background: url("https://s-media-cache-ak0.pinimg.com/736x/0b/bf/ec/0bbfec448c56df9bc204147e7cc023cf.jpg");
-}
+  <body>
+    <main>
+      <section id="zitat">
+        <span>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam."</span>
+      </section>
+      <section id="kopieren">
+        <span>kopieren</span>
+      </section>
+    </main>
+  </body>
 
-main {
-  width: 400px;
-  margin: 0 auto;
-}
-
-#heart {
-  position: relative;
-  height: 225px;
-}
-
-img {
-  width: 200px;
-  position: absolute;
-  left: 100px;
-}
-
-img:hover {
-  animation-name: pulse;
-  animation-duration: 3s;
-}
-
-@keyframes pulse {
-  20% {
-    transform: scale(1.1, 1.1);
-  }
-}
-
-.vis {
-  visibility: visible !important;
-}
-
-#zitat {
-  background-color: white;
-  border-radius: 25px;
-  padding: 5%;
-  color: #222;
-  box-shadow: 10px 10px 20px grey;
-  opacity: 0.6;
-  visibility: hidden;
-}
-
-p {
-  margin: 0;
-}
-
-
-/* F200FF */
-</style>
-<script>
-function pulseClick() {
-  $("#zitat").css("visibility", "visible").hide().fadeIn("slow");
-}
-
-
-$("img").on("click", pulseClick);
-
-</script>
+</html>
