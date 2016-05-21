@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Crafty+Girls);
+
+* {
+	box-sizing: border-box;
+}
+
 main,
 section {
 	display: block;
@@ -5,6 +11,39 @@ section {
 
 html,
 body {
+	font-family: "Crafty Girls";
 	height: 100%;
+}
+
+body {
+	font-size: 100%;
+	margin: 0;
+	padding: 10% 0 0 0;
+}
+
+main {
+	background-color: lightgreen;
+	font-size: 1.5em;
+	height: 80%;
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 1%;
+	position: relative;
+	width: 80%;
+}
+
+#zitat {
+	width: 100%;
+	text-align: center;
+	margin-top: 10%;
+}
+
+#kopieren {
+	display: inline-block;
+	left: 40%;
+	top: 70%;
+	position: absolute;
+	text-align: center;
+	width: 20%;
 }
 
