@@ -3,11 +3,11 @@ app.directive("zitat", function() {
 		templateUrl: "app/templates/zitat.html",
 		link: function(scope, element, attrs) {
 				$("#zitat").on("click", function() {
-					$("#zitat").hide("slow");
+					$("#zitat").fadeOut("slow");
 					$("#zitat").promise().done(function(){
 						scope.zitatWechseln();
 						scope.$apply();
-						$("#zitat").show("slow");
+						$("#zitat").fadeIn("slow");
 					});
 					
 				});
